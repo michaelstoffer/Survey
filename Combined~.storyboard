@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,12 +22,28 @@
                     <connections>
                         <segue destination="5AK-nt-f93" kind="relationship" relationship="viewControllers" id="PgQ-rq-y51"/>
                         <segue destination="0sP-rN-5sZ" kind="relationship" relationship="viewControllers" id="3df-cz-jxx"/>
-                        <segue destination="TXs-fj-gmj" kind="relationship" relationship="viewControllers" id="BNN-Oi-2UZ"/>
+                        <segue destination="cw9-sa-yKv" kind="relationship" relationship="viewControllers" id="BNN-Oi-2UZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzk-1E-TR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-516" y="-67"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="KM3-gu-zjL">
+            <objects>
+                <viewController id="cw9-sa-yKv" customClass="CombinedViewController" customModule="Survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EV8-jl-yu2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OYs-kA-Ybu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Tgl-Du-A7n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXu-ZU-PiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="656"/>
         </scene>
         <!--Voting-->
         <scene sceneID="QnF-ke-9N1">
@@ -36,7 +53,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSd-Jb-6ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="-214"/>
+            <point key="canvasLocation" x="419" y="-784"/>
         </scene>
         <!--Results-->
         <scene sceneID="TEe-id-kNC">
@@ -47,16 +64,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9A-mJ-0nQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="420" y="-68"/>
-        </scene>
-        <!--Combined-->
-        <scene sceneID="jT0-Yl-69K">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Combined" id="TXs-fj-gmj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LxW-9u-Esp"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggw-ir-jMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="432" y="76"/>
         </scene>
     </scenes>
 </document>
